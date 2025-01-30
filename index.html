@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 14 | Bootstrap</title>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'
+    integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=='
+    crossorigin='anonymous' />
+</head>
+
+<body>
+
+  <header class="bg-light py-2">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <nav class="navbar navbar-expand-lg">
+
+          <a class="navbar-brand" href="index.html">
+            <img style="max-height: 48px;" src="./assets/images/logo.webp" alt="Hillel Logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Курси</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="schoolDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Школа</a>
+                <ul class="dropdown-menu" aria-labelledby="schoolDropdown">
+                  <li><a class="dropdown-item" href="#">Про школу</a></li>
+                  <li><a class="dropdown-item" href="#">Викладачі</a></li>
+                  <li><a class="dropdown-item" href="#">Відгуки</a></li>
+                  <li><a class="dropdown-item" href="#">Перевірка сертифікату</a></li>
+                  <li><a class="dropdown-item" href="#">Подарувати навчання 🎁</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Бізнесу</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Працевлаштування</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Блог</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+            </ul>
+          </div>
+
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid my-4">
+    <div class="row g-3">
+
+      <aside class="col-xs-12 col-sm-12 col-md-12 col-lg-3 p-4 border bg-light">
+        <div id="carouselAside" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/slide-1.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slide-2.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slide-3.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/slide-4.jpg" class="d-block w-100" alt="Image 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAside" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAside" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Вперед</span>
+          </button>
+        </div>
+
+      </aside>
+
+      <main class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-4">
+
+        <section class="mb-4">
+          <div class="container">
+            <h2 class="display-5 text-center mb-4">Hillel School</h2>
+            <p class="lead text-center mb-5">Оберіть курс, який найбільше відповідає вашим інтересам та рівню знань.</p>
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Курс 1: Веб-розробка
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Цей курс навчить вас основам веб-розробки, включаючи HTML, CSS, JavaScript та основи роботи з
+                    фреймворками.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Курс 2: Бази даних
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    На цьому курсі ви навчитеся проектувати та працювати з реляційними базами даних, SQL та оптимізацією
+                    запитів.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Курс 3: Фронтенд-розробка
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Цей курс допоможе вам освоїти сучасні фреймворки для фронтенд-розробки, такі як React, Vue.js, та
+                    Angular.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Курс 4: Серверна розробка
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Курс з серверної розробки навчить вас працювати з бекенд-фреймворками та створювати API для
+                    веб-додатків.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row g-4">
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="card bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Курс 1: Веб-розробка</h5>
+                    <p class="card-text">Навчіться основам веб-розробки, включаючи HTML, CSS, JavaScript.</p>
+                    <a href="#" class="btn btn-primary">Деталі курсу</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="card bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Курс 2: Бази даних</h5>
+                    <p class="card-text">Освойте проектування та роботу з реляційними базами даних і SQL.</p>
+                    <a href="#" class="btn btn-primary">Деталі курсу</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="card bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Курс 3: Фронтенд-розробка</h5>
+                    <p class="card-text">Навчіться працювати з фреймворками для фронтенду, такими як React, Vue.js.</p>
+                    <a href="#" class="btn btn-primary">Деталі курсу</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="card bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title">Курс 4: Серверна розробка</h5>
+                    <p class="card-text">Навчіться створювати серверні додатки та API за допомогою різних фреймворків.
+                    </p>
+                    <a href="#" class="btn btn-primary">Деталі курсу</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="col-xs-12 col-sm-12 col-md-6 col-lg-3 p-4 border bg-light">
+        <h2>Запис на курс</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Ім'я</label>
+            <input type="text" class="form-control" id="name" placeholder="Введіть своє ім'я" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Електронна пошта</label>
+            <input type="email" class="form-control" id="email" placeholder="Введіть вашу електронну пошту" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="course" class="form-label">Вибір курсу</label>
+            <select class="form-select" id="course" required>
+              <option selected disabled>Оберіть курс</option>
+              <option value="web-development">Веб-розробка</option>
+              <option value="database">Бази даних</option>
+              <option value="frontend">Фронтенд-розробка</option>
+              <option value="backend">Бекенд-розробка</option>
+              <option value="devops">DevOps та автоматизація</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="startDate" class="form-label">Дата початку</label>
+            <input type="date" class="form-control" id="startDate" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="comments" class="form-label">Коментарі</label>
+            <textarea class="form-control" id="comments" rows="8"
+              placeholder="Додайте коментарі (необов'язково)"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Записатись</button>
+        </form>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="text-white py-5" style="background: #04417f;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <span>© 2025 Комп'ютерна школа Hillel</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js'
+    integrity='sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=='
+    crossorigin='anonymous'></script>
+</body>
+
+</html>
